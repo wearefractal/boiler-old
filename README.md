@@ -13,14 +13,15 @@ edit
 
     app/
       models/
-        Todo.coffee     # dermis model
-        Todos.coffee    # dermis collection
+        Todo.coffee      # dermis model
+        Todos.coffee     # dermis collection
       services/
-        getTodos.coffee # vein (node.js) service
+        getTodos.coffee  # vein (node.js) service
       views/
         index/
-          index.coffee  # controller
-          index.jade    # template
+          index.coffee   # controller
+          index.jade     # template
+        routes.coffee    # dermis routes 
 
 
 ## LICENSE
