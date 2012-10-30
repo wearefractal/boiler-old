@@ -12,11 +12,15 @@ to use
 edit 
 
     app/
+      models/
+        Todo.coffee     # dermis model
+        Todos.coffee    # dermis collection
       services/
+        getTodos.coffee # vein (node.js) service
       views/
         index/
-          index.jade   # template
-          index.coffee # controller
+          index.jade    # template
+          index.coffee  # controller
 
 
 ## LICENSE
