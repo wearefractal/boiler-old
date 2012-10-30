@@ -23,6 +23,11 @@ gruntConfig =
       dest:  "build/webapp/public/js/routes"
       options:
         bare: true
+    models:
+      src: [ "app/models/**/*.coffee" ]
+      dest:  "build/webapp/public/js/models"
+      options:
+        bare: true
     vendor:
       src: [ "build/webapp/client/js/vendor/*.coffee" ]
       dest:  "build/webapp/public/js/vendor"
@@ -63,6 +68,7 @@ gruntConfig =
     coffee:
       files: [ "<config:coffee.app.src>",
                "<config:coffee.services.src>",
+               "<config:coffee.models.src>",
                "<config:coffee.vendor.src>" ]
       tasks: "coffee reload" 
 
