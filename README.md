@@ -19,8 +19,8 @@ edit
         getTodos.coffee # vein (node.js) service
       views/
         index/
-          index.jade    # template
           index.coffee  # controller
+          index.jade    # template
 
 
 ## LICENSE
