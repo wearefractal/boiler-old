@@ -1,0 +1,37 @@
+{
+  "name": "todos-dermis",
+  "description": "Nothing here yet",
+  "version": "0.0.1",
+  "homepage": "http://github.com/wearefractal/todos-dermis",
+  "repository": "git://github.com/wearefractal/todos-dermis.git",
+  "author": "Fractal <contact@wearefractal.com> (www.wearefractal.com)",
+  "main": "./app/index.coffee",
+  "dependencies": {
+    "coffee-script": "*",
+    "vein": "~0.4.8",
+    "connect": "~2.6.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "uglify-js": "*",
+    "jaded": "*",
+    "grunt-reload": "*",
+    "grunt-coffee": "*",
+    "grunt-jaded": "*",
+    "grunt-simple-mocha": "*",
+    "grunt-contrib": "~0.1.6"
+  },
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/wearefractal/todos-dermis/raw/master/LICENSE"
+    }
+  ]
+}

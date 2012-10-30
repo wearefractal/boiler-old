@@ -1,0 +1,9 @@
+header
+  h1 todos
+
+section#main
+  input#title(type="text", data-on-change=":add", onsubmit="return false", placeholder="")
+
+  ul#TodoList
+    li(data-each-todo=":all < .items .completed")
+      span(data-text="todo:title")
