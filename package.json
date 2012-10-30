@@ -1,15 +1,15 @@
 {
-  "name": "todos-dermis",
+  "name": "boiler",
   "description": "Nothing here yet",
   "version": "0.0.1",
-  "homepage": "http://github.com/wearefractal/todos-dermis",
-  "repository": "git://github.com/wearefractal/todos-dermis.git",
+  "homepage": "http://github.com/wearefractal/boiler",
+  "repository": "git://github.com/wearefractal/boiler.git",
   "author": "Fractal <contact@wearefractal.com> (www.wearefractal.com)",
   "main": "./app/index.coffee",
   "dependencies": {
     "coffee-script": "*",
-    "vein": "~0.4.8",
-    "connect": "~2.6.1"
+    "vein": "*",
+    "connect": "*"
   },
   "devDependencies": {
     "mocha": "*",
@@ -20,7 +20,7 @@
     "grunt-coffee": "*",
     "grunt-jaded": "*",
     "grunt-simple-mocha": "*",
-    "grunt-contrib": "~0.1.6"
+    "grunt-contrib": "*"
   },
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script"
@@ -31,7 +31,7 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/wearefractal/todos-dermis/raw/master/LICENSE"
+      "url": "http://github.com/wearefractal/boiler/raw/master/LICENSE"
     }
   ]
 }
