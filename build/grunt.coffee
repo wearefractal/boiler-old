@@ -12,6 +12,10 @@ gruntConfig =
         reporter:    'spec'
         ui:          'exports'
         ignoreLeaks: 'true'
+  stylus:
+    compile:
+      files:
+        'build/webapp/public/css/styles.css' : 'app/views/**/*.styl'
   coffee:
     app:
       src: [ "build/webapp/client/js/*.coffee" ]
@@ -53,13 +57,15 @@ gruntConfig =
         "build/webapp/public/js/vendor/": "build/webapp/client/js/vendor/**"
         "build/webapp/public/css/":       "build/webapp/client/css/**"
         "build/webapp/public/img/":       "build/webapp/client/img/**"
-        "build/webapp/public/dev/":       "build/webapp/client/dev/**"
         "build/webapp/public/":           "build/webapp/client/index.html"
   reload: {}  
   watch:
     services:
       files: "app/**/services/**/*.coffee"
       tasks: "mocha"
+    stylus:
+      files: "app/views/**/*.styl"
+      tasks: "stylus reload"
     client: 
       files: [
         "build/webapp/client/js/vendor/**",
@@ -92,9 +98,10 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-coffee"
   grunt.loadNpmTasks "grunt-jaded"
   grunt.loadNpmTasks "grunt-simple-mocha"
+  grunt.loadNpmTasks "grunt-contrib-stylus"
 
   ## default 
-  grunt.registerTask "default", "simplemocha copy jaded coffee start watch"
+  grunt.registerTask "default", "simplemocha copy jaded coffee stylus start watch"
 
   ## start
   grunt.registerTask "start", "start up servers", ->

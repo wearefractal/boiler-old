@@ -18,10 +18,13 @@ edit
       services/
         getTodos.coffee  # vein (node.js) service
       views/
-        index/
+        img/
+          granite.jpg    # sample bg texture
+        index/           # name of view
           index.coffee   # controller
           index.jade     # template
         routes.coffee    # dermis routes 
+        styles.styl      # stylus styles
 
 
 ## LICENSE
