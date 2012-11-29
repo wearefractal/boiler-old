@@ -101,7 +101,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-stylus"
 
   ## default 
-  grunt.registerTask "default", "simplemocha copy jaded coffee stylus start watch"
+  grunt.registerTask "default", "reload simplemocha copy jaded coffee stylus start watch"
 
   ## start
   grunt.registerTask "start", "start up servers", ->
