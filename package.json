@@ -1,6 +1,6 @@
 {
   "name": "boiler",
-  "description": "Nothing here yet",
+  "description": "boilerplate",
   "version": "0.0.1",
   "homepage": "http://github.com/wearefractal/boiler",
   "repository": "git://github.com/wearefractal/boiler.git",
@@ -21,7 +21,8 @@
     "grunt-coffee": "*",
     "grunt-jaded": "*",
     "grunt-simple-mocha": "*",
-    "grunt-contrib": "*"
+    "grunt-contrib": "*",
+    "grunt-contrib-stylus": "*"
   },
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script"
