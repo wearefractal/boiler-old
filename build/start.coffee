@@ -4,10 +4,7 @@ Vein = require "vein"
 # Web server
 webServer = connect()
 
-#webServer.use connect.responseTime()
 webServer.use connect.favicon()
-#webServer.use connect.limit config.images.maxsize
-webServer.use connect.staticCache()
 webServer.use connect.static app.paths.public
 
 server = webServer.listen app.web.port
